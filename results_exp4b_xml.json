@@ -1,0 +1,165 @@
+{
+  "experiment": "format_switching_xml",
+  "model": "deepseek-chat",
+  "timestamp": "2026-01-23T14:06:38.477190",
+  "results": [
+    {
+      "prompt_id": "binary_tree",
+      "repetition": 0,
+      "output": "A binary tree is a data structure where each item (called a node) can have up to two connections to other nodes, typically called the left child and the right child. It starts with a single root node, and each child can itself be the root of a smaller subtree.\n\n```xml\n<node>\n  <value>10</value>\n  <left>\n    <node>\n      <value>5</value>\n      <left>\n        <node>\n          <value>1</value>\n        </node>\n      </left>\n      <right>\n        <node>\n          <value>7</value>\n        </node>\n      </right>\n    </node>\n  </left>\n  <right>\n    <node>\n      <value>15</value>\n    </node>\n  </right>\n</node>\n```\n\nThe tree I just output has the root node with a value of 10. The root's left child is a node with a value of 5, and this node itself has two children: a left child with a value of 1 and a right child with a value of 7. The root's right child is a single node with a value of 15, which has no further children.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "semantic_continuity": {
+        "references_xml_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "binary_tree",
+      "repetition": 1,
+      "output": "A binary tree is a data structure where each item (called a node) can have up to two connections to other nodes, typically called the left child and the right child. It starts from a single root node and branches out, forming a structure that looks like an upside-down tree.\n\n```xml\n<node>\n  <value>10</value>\n  <left>\n    <node>\n      <value>5</value>\n      <left>\n        <node>\n          <value>1</value>\n        </node>\n      </left>\n      <right>\n        <node>\n          <value>7</value>\n        </node>\n      </right>\n    </node>\n  </left>\n  <right>\n    <node>\n      <value>15</value>\n    </node>\n  </right>\n</node>\n```\n\nThe tree I just output has the root node with a value of 10. The root's left child is a node with value 5, and this node itself has two children: a left child with value 1 and a right child with value 7. The root's right child is a single node with value 15, which has no further children.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "semantic_continuity": {
+        "references_xml_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "recipe",
+      "repetition": 0,
+      "output": "Pasta carbonara is a classic Roman pasta dish made with eggs, hard cheese, cured pork (like guanciale or pancetta), and black pepper, creating a rich, creamy sauce without using actual cream.\n\n<recipe>\n  <name>Spaghetti Carbonara</name>\n  <servings>4</servings>\n  <ingredients>\n    <item>400g spaghetti</item>\n    <item>150g guanciale (or pancetta), diced</item>\n    <item>3 large eggs</item>\n    <item>1 cup Pecorino Romano cheese, finely grated</item>\n    <item>1/2 cup Parmigiano-Reggiano cheese, finely grated</item>\n    <item>Freshly cracked black pepper</item>\n    <item>Salt for pasta water</item>\n  </ingredients>\n  <steps>\n    <step>Bring a large pot of heavily salted water to a boil and cook the spaghetti until al dente.</step>\n    <step>While the pasta cooks, sauté the diced guanciale in a large pan over medium heat until crisp, then turn off the heat.</step>\n    <step>In a medium bowl, whisk together the eggs, both cheeses, and a generous amount of black pepper.</step>\n    <step>When the pasta is done, reserve about 1 cup of the starchy pasta water, then drain the pasta.</step>\n    <step>Add the hot, drained pasta to the pan with the guanciale and fat, tossing to coat.</step>\n    <step>Working quickly off the heat, pour the egg and cheese mixture into the pasta, tossing constantly to create a creamy sauce. If needed, add reserved pasta water a tablespoon at a time to loosen the sauce.</step>\n    <step>Serve immediately with an extra sprinkle of cheese and black pepper.</step>\n  </steps>\n</recipe>\n\nThe trickiest step is step 6, where you combine the egg mixture with the hot pasta. You must work quickly and off the direct heat to avoid scrambling the eggs. The goal is for the residual heat to gently cook the eggs into a silky sauce, but if the pan is too hot or you don't toss vigorously enough, you'll end with bits of cooked egg instead of a smooth emulsion.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": true,
+      "semantic_continuity": {
+        "references_xml_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": false
+      }
+    },
+    {
+      "prompt_id": "recipe",
+      "repetition": 1,
+      "output": "Pasta carbonara is a classic Roman pasta dish made with eggs, hard cheese, cured pork (like guanciale or pancetta), and black pepper, creating a rich, creamy sauce without using actual cream.\n\n<recipe>\n  <name>Spaghetti Carbonara</name>\n  <servings>4</servings>\n  <ingredients>\n    <item>1 pound (450g) spaghetti</item>\n    <item>8 ounces (225g) guanciale or pancetta, diced</item>\n    <item>3 large eggs</item>\n    <item>1 cup (100g) finely grated Pecorino Romano cheese</item>\n    <item>1/2 cup (50g) finely grated Parmigiano-Reggiano cheese</item>\n    <item>1 teaspoon freshly cracked black pepper</item>\n    <item>Salt for pasta water</item>\n  </ingredients>\n  <steps>\n    <step>Bring a large pot of heavily salted water to a boil and cook the spaghetti until al dente.</step>\n    <step>While the pasta cooks, sauté the diced guanciale in a large skillet over medium heat until crisp and the fat has rendered, about 5-7 minutes. Remove from heat.</step>\n    <step>In a medium bowl, whisk together the eggs, both grated cheeses, and the black pepper until a smooth, thick paste forms.</step>\n    <step>When the pasta is done, reserve about 1 cup of the starchy pasta water, then drain the pasta.</step>\n    <step>Working quickly, add the hot, drained pasta to the skillet with the guanciale and its fat. Toss to coat.</step>\n    <step>Remove the skillet from the heat entirely. Slowly pour the egg and cheese mixture into the pasta, tossing and stirring vigorously to create a creamy sauce. If the sauce is too thick, add reserved pasta water a tablespoon at a time until desired consistency is reached.</step>\n    <step>Serve immediately with an extra sprinkle of cheese and pepper.</step>\n  </steps>\n</recipe>\n\nThe trickiest step is step 6, where you combine the egg mixture with the hot pasta. If the pan is too hot, the eggs will scramble into small curds instead of forming a smooth, creamy emulsion. Conversely, if the pasta has cooled too much, the sauce won't thicken properly. The key is to remove the skillet from the heat entirely and use the residual heat of the pasta and pan to gently cook the eggs into a silky sauce, while tossing constantly.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": true,
+      "semantic_continuity": {
+        "references_xml_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": false
+      }
+    },
+    {
+      "prompt_id": "api_endpoint",
+      "repetition": 0,
+      "output": "A REST API endpoint is a specific URL where a client can send requests to interact with a server's resources. It uses standard HTTP methods (like GET or POST) to perform operations on data identified by the endpoint's path.\n\n```xml\n<endpoint>\n    <method>POST</method>\n    <path>/api/v1/users/register</path>\n    <request_body>\n        <field name=\"username\" type=\"string\" required=\"true\" />\n        <field name=\"email\" type=\"string\" required=\"true\" />\n        <field name=\"password\" type=\"string\" required=\"true\" />\n    </request_body>\n    <responses>\n        <response status=\"201\">User created successfully.</response>\n        <response status=\"400\">Invalid request data (e.g., missing fields, invalid email format).</response>\n        <response status=\"409\">Email or username already exists.</response>\n        <response status=\"500\">Internal server error.</response>\n    </responses>\n</endpoint>\n```\n\nIf someone sent an invalid email (like \"user@invalid\" or \"notanemail.com\") to my `/api/v1/users/register` endpoint, the server would validate the request body, detect that the email field does not contain a properly formatted email address, and immediately respond with a **400 Bad Request** error. The response body would likely contain a message explaining that the email format is invalid, and no user account would be created.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "semantic_continuity": {
+        "references_xml_content": true,
+        "specific_values_mentioned": 1,
+        "coherent_explanation": false
+      }
+    },
+    {
+      "prompt_id": "api_endpoint",
+      "repetition": 1,
+      "output": "A REST API endpoint is a specific URL where a client can send requests to interact with a server's resources. It uses standard HTTP methods (like GET or POST) to perform operations on data identified by the endpoint's path.\n\n```xml\n<endpoint>\n    <method>POST</method>\n    <path>/api/v1/users/register</path>\n    <request_body>\n        <field name=\"username\" type=\"string\" required=\"true\" />\n        <field name=\"email\" type=\"string\" required=\"true\" />\n        <field name=\"password\" type=\"string\" required=\"true\" />\n    </request_body>\n    <responses>\n        <response status=\"201\">User created successfully.</response>\n        <response status=\"400\">Invalid request data (e.g., missing fields or invalid email format).</response>\n        <response status=\"409\">Email or username already exists.</response>\n        <response status=\"500\">Internal server error.</response>\n    </responses>\n</endpoint>\n```\n\nIf someone sent an invalid email (like \"user@invalid\" or \"notanemail.com\") to my `/api/v1/users/register` endpoint, the server would validate the request body, detect that the email field does not contain a properly formatted email address, and immediately respond with a **400 Bad Request** status code. The response body would likely contain an error message explaining that the email format is invalid, and no user account would be created.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "semantic_continuity": {
+        "references_xml_content": true,
+        "specific_values_mentioned": 1,
+        "coherent_explanation": false
+      }
+    },
+    {
+      "prompt_id": "chess_position",
+      "repetition": 0,
+      "output": "Castling is a special move in chess where the king moves two squares toward a rook, and that rook jumps to the square the king passed over.\n\n<board>\n  <row>\n    <cell>R</cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell>K</cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell>R</cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell>r</cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell>k</cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell>r</cell>\n  </row>\n</board>\n\nThis position allows White to castle kingside because: the White king is on its starting square (e1), the kingside rook is on its starting square (h1), and all the squares between them (f1 and g1) are empty. Furthermore, neither the king nor the rook has moved yet in the game, and the king is not currently in check.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": true,
+      "semantic_continuity": {
+        "references_xml_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "chess_position",
+      "repetition": 1,
+      "output": "Castling is a special move in chess where the king moves two squares toward a rook, and that rook jumps to the square the king passed over.\n\n<board>\n  <row>\n    <cell>R</cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell>K</cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell>R</cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n  </row>\n  <row>\n    <cell>r</cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell>k</cell>\n    <cell> </cell>\n    <cell> </cell>\n    <cell>r</cell>\n  </row>\n</board>\n\nThis position allows White to castle kingside because: the White king is on its starting square (e1), the kingside rook is on its starting square (h1), and all the squares between them (f1 and g1) are empty. Furthermore, neither the king nor the rook has moved yet in the game, and the king is not currently in check.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": true,
+      "semantic_continuity": {
+        "references_xml_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "neural_network",
+      "repetition": 0,
+      "output": "A neural network layer is a collection of neurons that performs a transformation on its input data, typically involving a weighted sum and a non-linear activation function. Each layer's output becomes the input for the next layer in the network.\n\n```xml\n<network>\n  <layer type=\"dense\">\n    <input_dim>784</input_dim>\n    <output_dim>128</output_dim>\n    <activation>relu</activation>\n  </layer>\n  <layer type=\"dense\">\n    <input_dim>128</input_dim>\n    <output_dim>64</output_dim>\n    <activation>relu</activation>\n  </layer>\n  <layer type=\"dense\">\n    <input_dim>64</input_dim>\n    <output_dim>10</output_dim>\n    <activation>softmax</activation>\n  </layer>\n</network>\n```\n\nI chose these dimensions and activations to model a classic network for image classification, like on the MNIST dataset. The input of 784 represents a flattened 28x28 pixel image. The two hidden layers (128 and 64 units) with ReLU activations progressively learn features from the data while introducing non-linearity. The final output layer has 10 units (for 10 digit classes) with a softmax activation, which converts the outputs into a probability distribution over the possible classes.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "semantic_continuity": {
+        "references_xml_content": true,
+        "specific_values_mentioned": 3,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "neural_network",
+      "repetition": 1,
+      "output": "A neural network layer is a computational unit that transforms input data using a set of learnable weights and a non-linear activation function. It typically performs a weighted sum of its inputs and passes the result through an activation function to produce an output for the next layer.\n\n<network>\n  <layer type=\"dense\">\n    <input_dim>10</input_dim>\n    <output_dim>16</output_dim>\n    <activation>relu</activation>\n  </layer>\n  <layer type=\"dense\">\n    <input_dim>16</input_dim>\n    <output_dim>8</output_dim>\n    <activation>relu</activation>\n  </layer>\n  <layer type=\"dense\">\n    <input_dim>8</input_dim>\n    <output_dim>1</output_dim>\n    <activation>sigmoid</activation>\n  </layer>\n</network>\n\nI chose these dimensions to create a simple, progressively narrowing architecture for a binary classification task. The first layer reduces the 10 input features to 16 hidden units, the second compresses further to 8 units, and the final layer outputs a single probability using a sigmoid activation. The ReLU activations in the hidden layers help with efficient learning and mitigate the vanishing gradient problem, while the sigmoid on the output is standard for producing a binary classification probability.",
+      "has_pre_text": true,
+      "has_xml": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": true,
+      "semantic_continuity": {
+        "references_xml_content": true,
+        "specific_values_mentioned": 3,
+        "coherent_explanation": false
+      }
+    }
+  ],
+  "summary": {
+    "xml_valid_rate": 1.0,
+    "all_three_sections": 1.0,
+    "clean_transition_in": 1.0,
+    "clean_transition_out": 0.5,
+    "references_xml": 0.4,
+    "coherent_post": 0.5
+  }
+}

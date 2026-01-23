@@ -1,0 +1,24 @@
+{
+  "experiment": "attention_patterns",
+  "model": "/workspace/models/Llama-3.3-70B-Instruct-INT8",
+  "timestamp": "2026-01-23T14:39:43.175661",
+  "results": {
+    "json": {
+      "mean_long_range": 0.7197478652000427,
+      "max_long_range": 0.78564453125,
+      "num_tokens": 98,
+      "mean_structural": 0.003658621059730649,
+      "max_structural": 0.15576171875
+    },
+    "markdown": {
+      "mean_long_range": 0.5035559177398682,
+      "max_long_range": 0.5712890625,
+      "num_tokens": 49
+    },
+    "plaintext": {
+      "mean_long_range": 0.43730888366699217,
+      "max_long_range": 0.5,
+      "num_tokens": 42
+    }
+  }
+}

@@ -154,8 +154,10 @@ def compute_structural_attention(attentions: np.ndarray, pairs: List[Tuple[int, 
     return scores
 
 
-def plot_comparison(results: Dict, output_dir: str):
+def plot_comparison(results: Dict, output_dir: str, model_short: str = ""):
     """Generate comparison plots."""
+    suffix = f"_{model_short}" if model_short else ""
+
     fig, axes = plt.subplots(1, 3, figsize=(18, 6))
 
     for idx, (format_name, data) in enumerate(results.items()):
@@ -167,9 +169,10 @@ def plot_comparison(results: Dict, output_dir: str):
         plt.colorbar(im, ax=axes[idx])
 
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, "long_range_attention_comparison.png"), dpi=150)
+    fname = f"long_range_attention_comparison{suffix}.png"
+    plt.savefig(os.path.join(output_dir, fname), dpi=150)
     plt.close()
-    print(f"  Saved: long_range_attention_comparison.png")
+    print(f"  Saved: {fname}")
 
     # Structural attention (JSON only)
     if "structural_scores" in results.get("json", {}):
@@ -180,9 +183,10 @@ def plot_comparison(results: Dict, output_dir: str):
         ax.set_ylabel("Layer")
         plt.colorbar(im, ax=ax)
         plt.tight_layout()
-        plt.savefig(os.path.join(output_dir, "json_structural_attention.png"), dpi=150)
+        fname = f"json_structural_attention{suffix}.png"
+        plt.savefig(os.path.join(output_dir, fname), dpi=150)
         plt.close()
-        print(f"  Saved: json_structural_attention.png")
+        print(f"  Saved: {fname}")
 
 
 def run_experiment(model_name: str = "deepseek-ai/DeepSeek-V2-Lite-Chat"):
@@ -267,9 +271,12 @@ def run_experiment(model_name: str = "deepseek-ai/DeepSeek-V2-Lite-Chat"):
     for fmt, data in results.items():
         print(f"{fmt:<12} {data['mean_long_range']:<15.4f} {data['max_long_range']:<15.4f}")
 
+    # Generate model-specific suffix to avoid overwriting
+    model_short = os.path.basename(model_name).lower().replace("-", "_").replace(".", "_")
+
     # Generate plots
     print("\nGenerating plots...")
-    plot_comparison(results, output_dir)
+    plot_comparison(results, output_dir, model_short)
 
     # Save numerical results
     save_results = {}
@@ -282,8 +289,7 @@ def run_experiment(model_name: str = "deepseek-ai/DeepSeek-V2-Lite-Chat"):
         if "mean_structural" in data:
             save_results[fmt]["mean_structural"] = data["mean_structural"]
             save_results[fmt]["max_structural"] = data["max_structural"]
-
-    output_path = os.path.join(output_dir, "results_exp3.json")
+    output_path = os.path.join(output_dir, f"results_exp3_{model_short}.json")
     with open(output_path, "w") as f:
         json.dump({
             "experiment": "attention_patterns",

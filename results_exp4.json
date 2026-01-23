@@ -1,0 +1,226 @@
+{
+  "experiment": "format_switching",
+  "model": "deepseek-chat",
+  "timestamp": "2026-01-23T12:35:09.939060",
+  "results": [
+    {
+      "prompt_id": "binary_tree",
+      "repetition": 0,
+      "output": "A binary tree is a data structure where each item (called a node) has a value and can have up to two \"children\" nodes, typically referred to as the left child and the right child. It starts with a single root node, and each child can itself be the root of a smaller binary tree, forming a branching, hierarchical structure.\n\n```json\n{\n  \"value\": 10,\n  \"left\": {\n    \"value\": 5,\n    \"left\": {\n      \"value\": 2,\n      \"left\": null,\n      \"right\": null\n    },\n    \"right\": {\n      \"value\": 7,\n      \"left\": null,\n      \"right\": null\n    }\n  },\n  \"right\": {\n    \"value\": 15,\n    \"left\": null,\n    \"right\": null\n  }\n}\n```\n\nThe tree I just output has the root node with a value of 10. The root's left child is a node with value 5, and this node itself has two children: a left child with value 2 and a right child with value 7. The root's right child is a single node with value 15, which has no children. So, the tree has a total of 5 nodes, with the node containing 5 being the only one with two children.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "binary_tree",
+      "repetition": 1,
+      "output": "A binary tree is a data structure where each item (called a node) has a value and can have up to two \"children\" nodes, one on the left and one on the right. It starts with a single node at the top called the root, and branches out from there.\n\n```json\n{\n  \"value\": 10,\n  \"left\": {\n    \"value\": 5,\n    \"left\": {\n      \"value\": 2,\n      \"left\": null,\n      \"right\": null\n    },\n    \"right\": {\n      \"value\": 7,\n      \"left\": null,\n      \"right\": null\n    }\n  },\n  \"right\": {\n    \"value\": 15,\n    \"left\": null,\n    \"right\": null\n  }\n}\n```\n\nThe tree I just output has a root node with a value of 10. The root's left child is a node with value 5, which itself has two children: a left child with value 2 and a right child with value 7. The root's right child is a single node with value 15, which has no children. So, the tree has a total of 5 nodes arranged in three levels.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": false
+      }
+    },
+    {
+      "prompt_id": "recipe",
+      "repetition": 0,
+      "output": "Pasta carbonara is a classic Roman pasta dish made with eggs, hard cheese, cured pork (like guanciale or pancetta), and black pepper, creating a rich, creamy sauce without using actual cream.\n\n```json\n{\n  \"name\": \"Spaghetti alla Carbonara\",\n  \"servings\": 4,\n  \"ingredients\": [\n    {\"item\": \"spaghetti\", \"amount\": \"400g (about 14 oz)\"},\n    {\"item\": \"guanciale (or pancetta)\", \"amount\": \"150g (about 5 oz), diced\"},\n    {\"item\": \"Pecorino Romano cheese, finely grated\", \"amount\": \"100g (about 1 cup)\"},\n    {\"item\": \"large eggs\", \"amount\": \"3 whole + 2 yolks\"},\n    {\"item\": \"freshly cracked black pepper\", \"amount\": \"1-2 tsp\"},\n    {\"item\": \"salt\", \"amount\": \"for pasta water\"}\n  ],\n  \"steps\": [\n    \"Bring a large pot of heavily salted water to a boil and cook the spaghetti until al dente.\",\n    \"While the pasta cooks, sauté the diced guanciale in a large pan over medium heat until crisp and its fat has rendered. Remove from heat.\",\n    \"In a medium bowl, whisk together the eggs, egg yolks, grated Pecorino Romano, and black pepper until smooth.\",\n    \"When the pasta is done, reserve about 1 cup of the starchy pasta water, then drain the pasta.\",\n    \"Add the hot, drained pasta directly to the pan with the guanciale and its fat, tossing to coat.\",\n    \"Remove the pan from the heat entirely. Quickly pour the egg and cheese mixture over the pasta, tossing and stirring vigorously to create a creamy sauce. If needed, add a small splash of the reserved pasta water to loosen the sauce.\",\n    \"Serve immediately with an extra sprinkle of Pecorino Romano and black pepper.\"\n  ]\n}\n```\n\nThe trickiest step in this recipe is **step 6**, where you combine the egg mixture with the hot pasta. You must work quickly and ensure the pan is off the heat to prevent the eggs from scrambling from direct, high heat. The goal is for the residual heat of the pasta and pan to gently cook the eggs into a silky, creamy emulsion. Adding the mixture too slowly or over too high a heat will result in bits of cooked egg instead of a smooth sauce.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": false
+      }
+    },
+    {
+      "prompt_id": "recipe",
+      "repetition": 1,
+      "output": "Pasta carbonara is a classic Roman pasta dish made with eggs, hard cheese, cured pork (like guanciale or pancetta), and black pepper, creating a rich, creamy sauce without using actual cream.\n\n```json\n{\n  \"name\": \"Spaghetti Carbonara\",\n  \"servings\": 4,\n  \"ingredients\": [\n    {\"item\": \"spaghetti\", \"amount\": \"400g (about 14 oz)\"},\n    {\"item\": \"guanciale (or pancetta)\", \"amount\": \"150g (about 5 oz), diced\"},\n    {\"item\": \"Pecorino Romano cheese\", \"amount\": \"100g (about 1 cup), finely grated\"},\n    {\"item\": \"large eggs\", \"amount\": \"3 whole + 2 yolks\"},\n    {\"item\": \"freshly cracked black pepper\", \"amount\": \"1 tsp, plus more to taste\"},\n    {\"item\": \"salt\", \"amount\": \"for pasta water\"}\n  ],\n  \"steps\": [\n    \"Bring a large pot of heavily salted water to a boil for the pasta.\",\n    \"While the water heats, combine the eggs, egg yolks, grated Pecorino Romano, and black pepper in a mixing bowl. Whisk until smooth and creamy.\",\n    \"In a large skillet or pan, cook the diced guanciale over medium heat until it is crispy and its fat has rendered, about 5-7 minutes. Remove from heat and set aside.\",\n    \"Cook the spaghetti in the boiling water until it is al dente. Just before draining, reserve about 1 cup of the starchy pasta water.\",\n    \"Drain the pasta and immediately add it to the skillet with the guanciale and its fat. Toss to coat the pasta thoroughly.\",\n    \"Remove the skillet from the heat. Quickly pour the egg and cheese mixture into the hot pasta, tossing and stirring vigorously to create a creamy sauce. If the sauce seems too thick, add the reserved pasta water a tablespoon at a time until desired consistency is reached.\",\n    \"Serve immediately with an extra sprinkle of Pecorino Romano and black pepper.\"\n  ]\n}\n```\n\nThe trickiest step in this recipe is **Step 6: combining the egg mixture with the hot pasta.** This is critical because if the pan is too hot, the eggs will scramble into curds instead of forming a smooth, creamy emulsion. Conversely, if the pasta is not hot enough, the sauce will be runny and won't properly coat the noodles. The key is to remove the skillet from the heat entirely and work quickly, using the residual heat of the pasta and pan to gently cook the eggs into a silky sauce.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "api_endpoint",
+      "repetition": 0,
+      "output": "A REST API endpoint is a specific URL where a client can send an HTTP request to interact with a server's resource. It combines a specific HTTP method (like GET or POST) with a path to define a single operation.\n\n```json\n{\n  \"endpoint\": {\n    \"method\": \"POST\",\n    \"path\": \"/api/v1/users/register\",\n    \"request_body\": {\n      \"fields\": {\n        \"email\": \"string\",\n        \"password\": \"string\",\n        \"username\": \"string\"\n      }\n    },\n    \"response\": {\n      \"201\": \"User created successfully\",\n      \"400\": \"Bad request (e.g., missing fields, invalid email format)\",\n      \"409\": \"Conflict (email already registered)\"\n    }\n  }\n}\n```\n\nIf someone sent an invalid email (like \"user@invalid\" or \"notanemail.com\") to my `/api/v1/users/register` endpoint, the server would validate the input, recognize the email format was incorrect, and immediately respond with a **400 Bad Request** status code and an error message explaining the problem, without creating a user or storing any data.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": true,
+        "specific_values_mentioned": 1,
+        "coherent_explanation": false
+      }
+    },
+    {
+      "prompt_id": "api_endpoint",
+      "repetition": 1,
+      "output": "A REST API endpoint is a specific URL where a client can send requests to interact with a server's resources. It uses standard HTTP methods (like GET or POST) to perform operations on data identified by the endpoint's path.\n\n```json\n{\n  \"endpoint\": {\n    \"method\": \"POST\",\n    \"path\": \"/api/v1/users/register\",\n    \"request_body\": {\n      \"fields\": {\n        \"email\": \"string\",\n        \"password\": \"string\",\n        \"username\": \"string\"\n      }\n    },\n    \"response\": {\n      \"201_Created\": {\n        \"message\": \"User registered successfully.\",\n        \"user_id\": \"integer\"\n      },\n      \"400_Bad_Request\": {\n        \"error\": \"Invalid request data.\"\n      },\n      \"409_Conflict\": {\n        \"error\": \"Email already registered.\"\n      }\n    }\n  }\n}\n```\n\nIf someone sent an invalid email (like \"user@website\" without a top-level domain) to this `/api/v1/users/register` endpoint, the server would validate the request body, find the email format to be incorrect, and respond with a **400 Bad Request** status. The response body would contain the JSON error message `{\"error\": \"Invalid request data.\"}`, and no user account would be created.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": true,
+        "specific_values_mentioned": 2,
+        "coherent_explanation": false
+      }
+    },
+    {
+      "prompt_id": "chess_position",
+      "repetition": 0,
+      "output": "Castling is a special chess move where the king moves two squares toward a rook, and that rook moves to the square the king passed over, all in one turn.\n\n```json\n{\n  \"board\": [\n    [\"r\", \"n\", \"b\", \"q\", \"k\", null, null, \"r\"],\n    [\"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\"],\n    [null, null, null, null, null, null, null, null],\n    [null, null, null, null, null, null, null, null],\n    [null, null, null, null, null, null, null, null],\n    [null, null, null, null, null, null, null, null],\n    [\"P\", \"P\", \"P\", \"P\", \"P\", \"P\", \"P\", \"P\"],\n    [\"R\", \"N\", \"B\", \"Q\", \"K\", null, null, \"R\"]\n  ]\n}\n```\n\nIn the provided position, White can castle kingside because: the white king on e1 and the white rook on h1 have never moved, the squares between them (f1 and g1) are empty, the king is not currently in check, and neither of the squares the king moves over (f1 and g1) are under attack by an enemy piece.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "chess_position",
+      "repetition": 1,
+      "output": "Castling is a special move in chess where the king moves two squares toward a rook, and that rook moves to the square the king skipped over, all in one turn.\n\n```json\n{\n  \"board\": [\n    [\"r\", \"n\", \"b\", \"q\", \"k\", null, null, \"r\"],\n    [\"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\"],\n    [null, null, null, null, null, null, null, null],\n    [null, null, null, null, null, null, null, null],\n    [null, null, null, null, null, null, null, null],\n    [null, null, null, null, null, null, null, null],\n    [\"P\", \"P\", \"P\", \"P\", \"P\", \"P\", \"P\", \"P\"],\n    [\"R\", \"N\", \"B\", \"Q\", \"K\", null, null, \"R\"]\n  ]\n}\n```\n\nIn the position shown, White can castle kingside because: the White king is on its starting square (e1) and has not moved; the kingside rook is on its starting square (h1) and has not moved; the squares between them (f1 and g1) are empty; and the king is not currently in check.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": false,
+        "specific_values_mentioned": 0,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "neural_network",
+      "repetition": 0,
+      "output": "A neural network layer is a computational unit that transforms input data using a set of learnable weights and a non-linear activation function. It maps an input of a certain dimension to an output of a new dimension, forming the fundamental building block of deep learning models.\n\n```json\n{\n  \"network\": {\n    \"layers\": [\n      {\n        \"type\": \"Dense\",\n        \"input_dim\": 784,\n        \"output_dim\": 128,\n        \"activation\": \"relu\"\n      },\n      {\n        \"type\": \"Dense\",\n        \"input_dim\": 128,\n        \"output_dim\": 64,\n        \"activation\": \"relu\"\n      },\n      {\n        \"type\": \"Dense\",\n        \"input_dim\": 64,\n        \"output_dim\": 10,\n        \"activation\": \"softmax\"\n      }\n    ]\n  }\n}\n```\n\nI chose these dimensions and activations to model a classic network for image classification, like on the MNIST dataset. The first layer's 784 inputs correspond to a 28x28 pixel image flattened into a vector. The dimensions progressively shrink (128 -> 64) to compress information step-by-step. I used ReLU activations in the hidden layers for efficient learning and to avoid the vanishing gradient problem, and a softmax in the final layer because its 10 outputs represent class probabilities for 10 digits, which softmax is perfect for.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": true,
+        "specific_values_mentioned": 3,
+        "coherent_explanation": true
+      }
+    },
+    {
+      "prompt_id": "neural_network",
+      "repetition": 1,
+      "output": "A neural network layer is a computational unit that transforms input data using a set of learnable weights and a non-linear activation function. It maps an input of a certain dimension to an output of a new dimension, enabling the network to learn hierarchical representations.\n\n```json\n{\n  \"layers\": [\n    {\n      \"type\": \"Dense\",\n      \"input_dim\": 784,\n      \"output_dim\": 128,\n      \"activation\": \"relu\"\n    },\n    {\n      \"type\": \"Dense\",\n      \"input_dim\": 128,\n      \"output_dim\": 64,\n      \"activation\": \"relu\"\n    },\n    {\n      \"type\": \"Dense\",\n      \"input_dim\": 64,\n      \"output_dim\": 10,\n      \"activation\": \"softmax\"\n    }\n  ]\n}\n```\n\nI chose these dimensions and activations to model a classic network for image classification, like on the MNIST dataset. The input of 784 matches a flattened 28x28 pixel image. The first two layers progressively compress this information (128 then 64 units) using ReLU, which is efficient and helps with gradient flow, to learn features. The final layer outputs 10 units (for 10 digit classes) with a softmax activation to produce a probability distribution over the possible classes.",
+      "has_pre_text": true,
+      "has_json": true,
+      "has_post_text": true,
+      "transition_in_clean": true,
+      "transition_out_clean": false,
+      "boundary_errors": {
+        "json_starts_cleanly": true,
+        "json_ends_cleanly": true,
+        "first_token_error": false,
+        "last_token_error": false
+      },
+      "semantic_continuity": {
+        "references_json_content": true,
+        "specific_values_mentioned": 3,
+        "coherent_explanation": true
+      }
+    }
+  ],
+  "summary": {
+    "json_valid_rate": 1.0,
+    "all_three_sections": 1.0,
+    "clean_transition_in": 1.0,
+    "clean_transition_out": 0.0,
+    "references_json": 0.4,
+    "coherent_post": 0.6,
+    "boundary_error_rate": 0.0
+  }
+}

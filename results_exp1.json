@@ -1,0 +1,155 @@
+{
+  "experiment": "structure_vs_content",
+  "model": "deepseek-chat",
+  "timestamp": "2026-01-23T12:31:47.457892",
+  "results": {
+    "valid_semantic": [
+      {
+        "stimulus": "{\"name\": \"Alice\", \"age\": 28, \"city\": \"Tokyo\"}",
+        "output": "[\n  {\"name\": \"Alice\", \"age\": 28, \"city\": \"Tokyo\"},\n  {\"name\": \"Bob\", \"age\": 32, \"city\": \"Paris\"},\n  {\"name\": \"Charlie\", \"age\": 24, \"city\": \"New York\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "{\"product\": \"laptop\", \"price\": 999, \"brand\": \"Dell\"}",
+        "output": "[\n  {\"product\": \"laptop\", \"price\": 999, \"brand\": \"Dell\"},\n  {\"product\": \"tablet\", \"price\": 499, \"brand\": \"Apple\"},\n  {\"product\": \"smartphone\", \"price\": 799, \"brand\": \"Samsung\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "{\"country\": \"France\", \"capital\": \"Paris\", \"population\": 67000000}",
+        "output": "[\n  {\"country\": \"France\", \"capital\": \"Paris\", \"population\": 67000000},\n  {\"country\": \"Germany\", \"capital\": \"Berlin\", \"population\": 83200000},\n  {\"country\": \"Italy\", \"capital\": \"Rome\", \"population\": 59500000}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "{\"title\": \"Inception\", \"year\": 2010, \"director\": \"Nolan\"}",
+        "output": "[\n  {\"title\": \"Inception\", \"year\": 2010, \"director\": \"Nolan\"},\n  {\"title\": \"The Matrix\", \"year\": 1999, \"director\": \"Wachowskis\"},\n  {\"title\": \"Blade Runner 2049\", \"year\": 2017, \"director\": \"Villeneuve\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "{\"language\": \"Python\", \"version\": \"3.11\", \"paradigm\": \"multi\"}",
+        "output": "[\n  {\"language\": \"Python\", \"version\": \"3.11\", \"paradigm\": \"multi\"},\n  {\"language\": \"JavaScript\", \"version\": \"ES2022\", \"paradigm\": \"multi\"},\n  {\"language\": \"Haskell\", \"version\": \"2010\", \"paradigm\": \"functional\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 0.7777777777777778
+      }
+    ],
+    "valid_nonsense": [
+      {
+        "stimulus": "{\"xqz\": \"brmf\", \"plk\": 42, \"wnv\": \"htjd\"}",
+        "output": "[\n  {\"xqz\": \"brmf\", \"plk\": 42, \"wnv\": \"htjd\"},\n  {\"xqz\": \"example1\", \"plk\": 100, \"wnv\": \"example2\"},\n  {\"xqz\": \"test\", \"plk\": 0, \"wnv\": \"data\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 0.6666666666666666
+      },
+      {
+        "stimulus": "{\"kkf\": \"zznp\", \"qrr\": 77, \"mxl\": \"vvbt\"}",
+        "output": "[\n  {\"kkf\": \"zznp\", \"qrr\": 77, \"mxl\": \"vvbt\"},\n  {\"kkf\": \"zznp\", \"qrr\": 77, \"mxl\": \"vvbt\"},\n  {\"kkf\": \"zznp\", \"qrr\": 77, \"mxl\": \"vvbt\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "{\"pph\": \"llkw\", \"dds\": 15, \"yyq\": \"rrms\"}",
+        "output": "[\n  {\"pph\": \"llkw\", \"dds\": 15, \"yyq\": \"rrms\"},\n  {\"pph\": \"llkw\", \"dds\": 15, \"yyq\": \"rrms\"},\n  {\"pph\": \"llkw\", \"dds\": 15, \"yyq\": \"rrms\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "{\"ttg\": \"ffnx\", \"bbj\": 63, \"ccw\": \"hhzp\"}",
+        "output": "[\n  {\"ttg\": \"ffnx\", \"bbj\": 63, \"ccw\": \"hhzp\"},\n  {\"ttg\": \"abcd\", \"bbj\": 42, \"ccw\": \"efgh\"},\n  {\"ttg\": \"ijkl\", \"bbj\": 99, \"ccw\": \"mnop\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 0.6666666666666666
+      },
+      {
+        "stimulus": "{\"nnr\": \"sskt\", \"wwf\": 28, \"ggm\": \"ppxl\"}",
+        "output": "[\n  {\"nnr\": \"sskt\", \"wwf\": 28, \"ggm\": \"ppxl\"},\n  {\"nnr\": \"sskt\", \"wwf\": 28, \"ggm\": \"ppxl\"},\n  {\"nnr\": \"sskt\", \"wwf\": 28, \"ggm\": \"ppxl\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 1.0,
+        "semantic_coherence": 0.0
+      }
+    ],
+    "invalid_semantic": [
+      {
+        "stimulus": "{\"name\" \"Alice\", \"age\": 28 \"city\" \"Tokyo\"",
+        "output": "[\n  {\"name\": \"Alice\", \"age\": 28, \"city\": \"Tokyo\"},\n  {\"name\": \"Bob\", \"age\": 32, \"city\": \"London\"},\n  {\"name\": \"Charlie\", \"age\": 25, \"city\": \"Paris\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "{\"product\" \"laptop\" \"price\" 999, \"brand\": \"Dell\"",
+        "output": "[\n  {\"product\": \"laptop\", \"price\": 999, \"brand\": \"Dell\"},\n  {\"product\": \"tablet\", \"price\": 499, \"brand\": \"Apple\"},\n  {\"product\": \"smartphone\", \"price\": 799, \"brand\": \"Samsung\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "{\"country\": \"France\" \"capital\" \"Paris\", \"population\" 67000000",
+        "output": "[\n  {\"country\": \"France\", \"capital\": \"Paris\", \"population\": 67000000},\n  {\"country\": \"Germany\", \"capital\": \"Berlin\", \"population\": 83000000},\n  {\"country\": \"Italy\", \"capital\": \"Rome\", \"population\": 59000000}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "{\"title\" \"Inception\", \"year\" 2010 \"director\": \"Nolan\"",
+        "output": "[\n  {\"title\": \"Inception\", \"year\": 2010, \"director\": \"Nolan\"},\n  {\"title\": \"Interstellar\", \"year\": 2014, \"director\": \"Nolan\"},\n  {\"title\": \"The Dark Knight\", \"year\": 2008, \"director\": \"Nolan\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "{\"language\" \"Python\" \"version\": \"3.11\" \"paradigm\" \"multi\"",
+        "output": "[\n  {\"language\": \"Python\", \"version\": \"3.11\", \"paradigm\": \"multi\"},\n  {\"language\": \"Java\", \"version\": \"17\", \"paradigm\": \"object-oriented\"},\n  {\"language\": \"Haskell\", \"version\": \"2010\", \"paradigm\": \"functional\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 0.6666666666666666
+      }
+    ],
+    "invalid_nonsense": [
+      {
+        "stimulus": "{\"xqz\" \"brmf\" \"plk\" 42, \"wnv\" \"htjd\"",
+        "output": "[\n  {\"xqz\": \"brmf\", \"plk\": 42},\n  {\"xqz\": \"wnv\", \"plk\": \"htjd\"},\n  {\"xqz\": \"example\", \"plk\": \"value\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 0.4
+      },
+      {
+        "stimulus": "{\"kkf\" \"zznp\", \"qrr\" 77 \"mxl\" \"vvbt\"",
+        "output": "[\n  {\"kkf\": \"zznp\", \"qrr\": 77, \"mxl\": \"vvbt\"},\n  {\"kkf\": \"value1\", \"qrr\": 100, \"mxl\": \"value2\"},\n  {\"kkf\": \"data1\", \"qrr\": 50, \"mxl\": \"data2\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 0.6666666666666666
+      },
+      {
+        "stimulus": "{\"pph\": \"llkw\" \"dds\" 15, \"yyq\" \"rrms\"",
+        "output": "[\n  {\"pph\": \"llkw\", \"dds\": 15, \"yyq\": \"rrms\"},\n  {\"pph\": \"llkw\", \"dds\": 15, \"yyq\": \"rrms\"},\n  {\"pph\": \"llkw\", \"dds\": 15, \"yyq\": \"rrms\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "{\"ttg\" \"ffnx\" \"bbj\": 63 \"ccw\" \"hhzp\"",
+        "output": "```json\n[\n    {\"ttg\": \"\", \"ffnx\": \"\", \"bbj\": 63, \"ccw\": \"\", \"hhzp\": \"\"},\n    {\"ttg\": \"\", \"ffnx\": \"\", \"bbj\": 0, \"ccw\": \"\", \"hhzp\": \"\"},\n    {\"ttg\": \"\", \"ffnx\": \"\", \"bbj\": 0, \"ccw\": \"\", \"hhzp\": \"\"}\n]\n```",
+        "structural_correctness": false,
+        "schema_consistency": 0.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "{\"nnr\" \"sskt\", \"wwf\" 28 \"ggm\": \"ppxl\"",
+        "output": "[\n  {\"nnr\": \"sskt\", \"wwf\": 28, \"ggm\": \"ppxl\"},\n  {\"nnr\": \"sskt\", \"wwf\": 28, \"ggm\": \"ppxl\"},\n  {\"nnr\": \"sskt\", \"wwf\": 28, \"ggm\": \"ppxl\"}\n]",
+        "structural_correctness": true,
+        "schema_consistency": 0.6666666666666666,
+        "semantic_coherence": 0.0
+      }
+    ]
+  }
+}

@@ -8,10 +8,10 @@ Design: Ask the model to output text→JSON→text in a single response.
 Measure error rates and semantic continuity at transition points.
 
 Requirements:
-  pip install anthropic
+  pip install openai
 
 Usage:
-  export ANTHROPIC_API_KEY=xxx
+  export DEEPSEEK_API_KEY=xxx
   python experiment4_format_switching.py
 """
 
@@ -21,7 +21,7 @@ import re
 import time
 from datetime import datetime
 from typing import Optional, Dict, List
-import anthropic
+from openai import OpenAI
 
 
 # ===== Prompts =====
@@ -232,17 +232,20 @@ def check_json_boundary_errors(sections: Dict) -> Dict:
 
 # ===== API Call =====
 
-def call_model(prompt: str, model: str = "claude-sonnet-4-20250514") -> Optional[str]:
-    """Call Claude API."""
-    client = anthropic.Anthropic()
+def call_model(prompt: str, model: str = "deepseek-chat") -> Optional[str]:
+    """Call DeepSeek API."""
+    client = OpenAI(
+        api_key=os.environ.get("DEEPSEEK_API_KEY"),
+        base_url="https://api.deepseek.com"
+    )
     try:
-        response = client.messages.create(
+        response = client.chat.completions.create(
             model=model,
             max_tokens=1500,
             temperature=0.0,
             messages=[{"role": "user", "content": prompt}]
         )
-        return response.content[0].text
+        return response.choices[0].message.content
     except Exception as e:
         print(f"  API Error: {e}")
         return None
@@ -250,7 +253,7 @@ def call_model(prompt: str, model: str = "claude-sonnet-4-20250514") -> Optional
 
 # ===== Main Experiment =====
 
-def run_experiment(model: str = "claude-sonnet-4-20250514", repetitions: int = 2):
+def run_experiment(model: str = "deepseek-chat", repetitions: int = 2):
     """Run format-switching experiment."""
     results = []
 

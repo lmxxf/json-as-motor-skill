@@ -10,10 +10,10 @@ Recovery should show a phase transition (not gradual degradation),
 consistent with a dedicated circuit being overwhelmed.
 
 Requirements:
-  pip install anthropic
+  pip install openai
 
 Usage:
-  export ANTHROPIC_API_KEY=xxx
+  export DEEPSEEK_API_KEY=xxx
   python experiment2_noise_injection.py
 """
 
@@ -22,7 +22,7 @@ import os
 import time
 from datetime import datetime
 from typing import Optional
-import anthropic
+from openai import OpenAI
 
 
 # ===== Noise Levels =====
@@ -139,17 +139,20 @@ def evaluate_recovery(output: str, original: dict) -> dict:
 
 # ===== API Call =====
 
-def call_model(prompt: str, model: str = "claude-sonnet-4-20250514") -> Optional[str]:
-    """Call Claude API."""
-    client = anthropic.Anthropic()
+def call_model(prompt: str, model: str = "deepseek-chat") -> Optional[str]:
+    """Call DeepSeek API."""
+    client = OpenAI(
+        api_key=os.environ.get("DEEPSEEK_API_KEY"),
+        base_url="https://api.deepseek.com"
+    )
     try:
-        response = client.messages.create(
+        response = client.chat.completions.create(
             model=model,
             max_tokens=800,
             temperature=0.0,
             messages=[{"role": "user", "content": prompt}]
         )
-        return response.content[0].text
+        return response.choices[0].message.content
     except Exception as e:
         print(f"  API Error: {e}")
         return None
@@ -165,7 +168,7 @@ Output:"""
 
 # ===== Main Experiment =====
 
-def run_experiment(model: str = "claude-sonnet-4-20250514", repetitions: int = 3):
+def run_experiment(model: str = "deepseek-chat", repetitions: int = 3):
     """Run noise injection experiment across all levels."""
     base_json_str = json.dumps(BASE_JSON, indent=2)
     results = {level: [] for level in range(5)}

@@ -14,10 +14,10 @@ while semantic coherence depends on input content (A>>B, C>>D).
 If these two dimensions are separable, it proves the dual-layer architecture.
 
 Requirements:
-  pip install anthropic openai
+  pip install openai
 
 Usage:
-  export ANTHROPIC_API_KEY=xxx
+  export DEEPSEEK_API_KEY=xxx
   python experiment1_structure_vs_content.py
 """
 
@@ -26,7 +26,7 @@ import os
 import time
 from datetime import datetime
 from typing import Optional
-import anthropic
+from openai import OpenAI
 
 # ===== Stimuli =====
 
@@ -161,17 +161,20 @@ def check_semantic_coherence(output: str) -> float:
 
 # ===== API Call =====
 
-def call_model(prompt: str, model: str = "claude-sonnet-4-20250514") -> Optional[str]:
-    """Call Claude API and return response text."""
-    client = anthropic.Anthropic()
+def call_model(prompt: str, model: str = "deepseek-chat") -> Optional[str]:
+    """Call DeepSeek API and return response text."""
+    client = OpenAI(
+        api_key=os.environ.get("DEEPSEEK_API_KEY"),
+        base_url="https://api.deepseek.com"
+    )
     try:
-        response = client.messages.create(
+        response = client.chat.completions.create(
             model=model,
             max_tokens=500,
             temperature=0.0,
             messages=[{"role": "user", "content": prompt}]
         )
-        return response.content[0].text
+        return response.choices[0].message.content
     except Exception as e:
         print(f"  API Error: {e}")
         return None
@@ -179,7 +182,7 @@ def call_model(prompt: str, model: str = "claude-sonnet-4-20250514") -> Optional
 
 # ===== Main Experiment =====
 
-def run_experiment(model: str = "claude-sonnet-4-20250514", trials_per_condition: int = 5):
+def run_experiment(model: str = "deepseek-chat", trials_per_condition: int = 5):
     """Run all conditions and collect metrics."""
     results = {condition: [] for condition in STIMULI.keys()}
 

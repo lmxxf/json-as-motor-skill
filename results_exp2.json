@@ -1,0 +1,182 @@
+{
+  "experiment": "noise_injection",
+  "model": "deepseek-chat",
+  "timestamp": "2026-01-23T12:32:58.947551",
+  "results": {
+    "0": [
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 0,
+        "noise_word_count": 0,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 0,
+        "noise_word_count": 0,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 0,
+        "noise_word_count": 0,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      }
+    ],
+    "1": [
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 1,
+        "noise_word_count": 9,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 1,
+        "noise_word_count": 9,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 1,
+        "noise_word_count": 9,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      }
+    ],
+    "2": [
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 2,
+        "noise_word_count": 23,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 2,
+        "noise_word_count": 23,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 2,
+        "noise_word_count": 23,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      }
+    ],
+    "3": [
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 3,
+        "noise_word_count": 39,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 3,
+        "noise_word_count": 39,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 3,
+        "noise_word_count": 39,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      }
+    ],
+    "4": [
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 4,
+        "noise_word_count": 77,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 4,
+        "noise_word_count": 77,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      },
+      {
+        "is_valid_json": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 4,
+        "noise_word_count": 77,
+        "input": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n\"The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level.\",\n\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}",
+        "output": "{\n  \"users\": [\n    {\n      \"name\": \"Alice\",\n      \"role\": \"admin\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Bob\",\n      \"role\": \"editor\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Carol\",\n      \"role\": \"viewer\",\n      \"active\": true\n    }\n  ]\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "experiment": "structure_vs_content_xml",
+  "model": "deepseek-chat",
+  "timestamp": "2026-01-23T14:00:43.967571",
+  "results": {
+    "valid_semantic": [
+      {
+        "stimulus": "<person><name>Alice</name><age>28</age><city>Tokyo</city></person>",
+        "output": "<items>\n<item><name>Alice</name><age>28</age><city>Tokyo</city></item>\n<item><name>Alice</name><age>28</age><city>Tokyo</city></item>\n<item><name>Alice</name><age>28</age><city>Tokyo</city></item>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 0.75,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "<product><name>laptop</name><price>999</price><brand>Dell</brand></product>",
+        "output": "<items>\n<product><name>laptop</name><price>999</price><brand>Dell</brand></product>\n<product><name>laptop</name><price>999</price><brand>Dell</brand></product>\n<product><name>laptop</name><price>999</price><brand>Dell</brand></product>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "<country><name>France</name><capital>Paris</capital><population>67000000</population></country>",
+        "output": "<items>\n  <item><name>France</name><capital>Paris</capital><population>67000000</population></item>\n  <item><name>Country2</name><capital>Capital2</capital><population>Population2</population></item>\n  <item><name>Country3</name><capital>Capital3</capital><population>Population3</population></item>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 0.75,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "<movie><title>Inception</title><year>2010</year><director>Nolan</director></movie>",
+        "output": "<items>\n    <movie><title>Inception</title><year>2010</year><director>Nolan</director></movie>\n    <movie><title>Example 1</title><year>2023</year><director>Director A</director></movie>\n    <movie><title>Example 2</title><year>2024</year><director>Director B</director></movie>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "<language><name>Python</name><version>3.11</version><paradigm>multi</paradigm></language>",
+        "output": "<items>\n<item><name>Python</name><version>3.11</version><paradigm>multi</paradigm></item>\n<item><name>Python</name><version>3.11</version><paradigm>multi</paradigm></item>\n<item><name>Python</name><version>3.11</version><paradigm>multi</paradigm></item>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 0.75,
+        "semantic_coherence": 0.6666666666666666
+      }
+    ],
+    "valid_nonsense": [
+      {
+        "stimulus": "<xqz><brmf>htjd</brmf><plk>42</plk><wnv>kkrf</wnv></xqz>",
+        "output": "<items>\n<brmf>htjd</brmf>\n<plk>42</plk>\n<wnv>kkrf</wnv>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 0.75,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "<kkf><zznp>vvbt</zznp><qrr>77</qrr><mxl>ppds</mxl></kkf>",
+        "output": "<items>\n<zznp>vvbt</zznp>\n<qrr>77</qrr>\n<mxl>ppds</mxl>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 0.75,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "<pph><llkw>rrms</llkw><dds>15</dds><yyq>ttgf</yyq></pph>",
+        "output": "<items>\n<pph><llkw>rrms</llkw><dds>15</dds><yyq>ttgf</yyq></pph>\n<pph><llkw>rrms</llkw><dds>15</dds><yyq>ttgf</yyq></pph>\n<pph><llkw>rrms</llkw><dds>15</dds><yyq>ttgf</yyq></pph>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "<ttg><ffnx>hhzp</ffnx><bbj>63</bbj><ccw>nnrk</ccw></ttg>",
+        "output": "<items>\n<ttg><ffnx>hhzp</ffnx><bbj>63</bbj><ccw>nnrk</ccw></ttg>\n<ttg><ffnx>hhzp</ffnx><bbj>63</bbj><ccw>nnrk</ccw></ttg>\n<ttg><ffnx>hhzp</ffnx><bbj>63</bbj><ccw>nnrk</ccw></ttg>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "<nnr><sskt>ppxl</sskt><wwf>28</wwf><ggm>qqvb</ggm></nnr>",
+        "output": "<items>\n<nnr><sskt>ppxl</sskt><wwf>28</wwf><ggm>qqvb</ggm></nnr>\n<nnr><sskt>ppxl</sskt><wwf>28</wwf><ggm>qqvb</ggm></nnr>\n<nnr><sskt>ppxl</sskt><wwf>28</wwf><ggm>qqvb</ggm></nnr>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 0.0
+      }
+    ],
+    "invalid_semantic": [
+      {
+        "stimulus": "<person><name>Alice<age>28</age><city>Tokyo</person>",
+        "output": "<items><item><name>Alice</name><age>28</age><city>Tokyo</city></item><item><name>Alice</name><age>28</age><city>Tokyo</city></item><item><name>Alice</name><age>28</age><city>Tokyo</city></item></items>",
+        "structural_correctness": true,
+        "tag_consistency": 0.75,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "<product><name>laptop</name><price>999<brand>Dell</brand>",
+        "output": "<items>\n<product><name>laptop</name><price>999</price><brand>Dell</brand></product>\n<product><name>laptop</name><price>999</price><brand>Dell</brand></product>\n<product><name>laptop</name><price>999</price><brand>Dell</brand></product>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "<country><name>France</name><capital>Paris<population>67000000</country>",
+        "output": "<items>\n<item><country><name>France</name><capital>Paris</capital><population>67000000</population></country></item>\n<item><country><name>France</name><capital>Paris</capital><population>67000000</population></country></item>\n<item><country><name>France</name><capital>Paris</capital><population>67000000</population></country></item>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "<movie><title>Inception<year>2010</year><director>Nolan",
+        "output": "<items>\n<item><title>Inception</title><year>2010</year><director>Nolan</director></item>\n<item><title>Inception</title><year>2010</year><director>Nolan</director></item>\n<item><title>Inception</title><year>2010</year><director>Nolan</director></item>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 0.75,
+        "semantic_coherence": 1.0
+      },
+      {
+        "stimulus": "<language><name>Python</name><version>3.11<paradigm>multi</language>",
+        "output": "<items>\n<item><language><name>Python</name><version>3.11</version><paradigm>multi</paradigm></language></item>\n<item><language><name>Python</name><version>3.11</version><paradigm>multi</paradigm></language></item>\n<item><language><name>Python</name><version>3.11</version><paradigm>multi</paradigm></language></item>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 0.6666666666666666
+      }
+    ],
+    "invalid_nonsense": [
+      {
+        "stimulus": "<xqz><brmf>htjd<plk>42</plk><wnv>kkrf</xqz>",
+        "output": "<items>\n<xqz><brmf>htjd<plk>42</plk><wnv>kkrf</wnv></brmf></xqz>\n<xqz><brmf>htjd<plk>42</plk><wnv>kkrf</wnv></brmf></xqz>\n<xqz><brmf>htjd<plk>42</plk><wnv>kkrf</wnv></brmf></xqz>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "<kkf><zznp>vvbt</zznp><qrr>77<mxl>ppds",
+        "output": "<items>\n<kkf><zznp>vvbt</zznp></kkf>\n<qrr>77</qrr>\n<mxl>ppds</mxl>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "<pph><llkw>rrms<dds>15</dds><yyq>ttgf</pph>",
+        "output": "<items>\n<item><tag1>rrms<tag2>15</tag2><tag3>ttgf</tag3></tag1></item>\n<item><tag1>rrms<tag2>15</tag2><tag3>ttgf</tag3></tag1></item>\n<item><tag1>rrms<tag2>15</tag2><tag3>ttgf</tag3></tag1></item>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 0.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "<ttg><ffnx>hhzp<bbj>63</bbj><ccw>nnrk",
+        "output": "<items>\n<ttg><ffnx>hhzp<bbj>63</bbj><ccw>nnrk</ccw></ffnx></ttg>\n<ttg><ffnx>hhzp<bbj>63</bbj><ccw>nnrk</ccw></ffnx></ttg>\n<ttg><ffnx>hhzp<bbj>63</bbj><ccw>nnrk</ccw></ffnx></ttg>\n</items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 0.0
+      },
+      {
+        "stimulus": "<nnr><sskt>ppxl</sskt><wwf>28<ggm>qqvb</nnr>",
+        "output": "<items><nnr><sskt>ppxl</sskt><wwf>28<ggm>qqvb</ggm></wwf></nnr><nnr><sskt>ppxl</sskt><wwf>28<ggm>qqvb</ggm></wwf></nnr><nnr><sskt>ppxl</sskt><wwf>28<ggm>qqvb</ggm></wwf></nnr></items>",
+        "structural_correctness": true,
+        "tag_consistency": 1.0,
+        "semantic_coherence": 0.0
+      }
+    ]
+  }
+}

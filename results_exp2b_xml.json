@@ -1,0 +1,167 @@
+{
+  "experiment": "noise_injection_xml",
+  "model": "deepseek-chat",
+  "timestamp": "2026-01-23T14:02:06.413597",
+  "results": {
+    "0": [
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 0,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 0,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 0,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      }
+    ],
+    "1": [
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 1,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. -->\n  <noise>The quick brown fox jumps over the lazy dog.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 1,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. -->\n  <noise>The quick brown fox jumps over the lazy dog.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 1,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. -->\n  <noise>The quick brown fox jumps over the lazy dog.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      }
+    ],
+    "2": [
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 2,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 2,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 2,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      }
+    ],
+    "3": [
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 3,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 3,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 3,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      }
+    ],
+    "4": [
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 4,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 4,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      },
+      {
+        "is_valid_xml": true,
+        "structure_preserved": true,
+        "data_preserved": true,
+        "noise_removed": true,
+        "noise_acknowledged": false,
+        "noise_level": 4,
+        "input": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <!-- The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level. -->\n  <noise>The quick brown fox jumps over the lazy dog. In 1969 humans first walked on the moon. Photosynthesis converts carbon dioxide into oxygen. The capital of Australia is Canberra, not Sydney. Dolphins are mammals that live in the ocean. Pi is approximately 3.14159265358979. Shakespeare wrote 37 plays during his lifetime. The speed of light is about 300,000 km per second. Mount Everest is the tallest mountain on Earth. Water boils at 100 degrees Celsius at sea level.</noise>\n\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>",
+        "output": "<users>\n  <user>\n    <name>Alice</name>\n    <role>admin</role>\n    <active>true</active>\n  </user>\n  <user>\n    <name>Bob</name>\n    <role>editor</role>\n    <active>false</active>\n  </user>\n  <user>\n    <name>Carol</name>\n    <role>viewer</role>\n    <active>true</active>\n  </user>\n</users>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "experiment": "attention_patterns",
+  "model": "/workspace/models/Qwen2.5-72B-Instruct-AWQ",
+  "timestamp": "2026-01-23T08:24:44.301602",
+  "results": {
+    "json": {
+      "mean_long_range": 0.6685016985051334,
+      "max_long_range": 0.78369140625,
+      "num_tokens": 97,
+      "mean_structural": 0.053967325715348125,
+      "max_structural": 0.28076171875
+    },
+    "markdown": {
+      "mean_long_range": 0.44057079770136626,
+      "max_long_range": 0.5625,
+      "num_tokens": 48
+    },
+    "plaintext": {
+      "mean_long_range": 0.3756136383861303,
+      "max_long_range": 0.48779296875,
+      "num_tokens": 41
+    }
+  }
+}

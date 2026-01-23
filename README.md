@@ -110,6 +110,18 @@ pip install torch transformers matplotlib
 python experiment3_attention_patterns.py --model deepseek-ai/DeepSeek-V2-Lite-Chat
 ```
 
+## TODO
+
+- [ ] 回家在 DGX Spark 上跑实验3（注意力模式可视化）
+  - [ ] LLaMA-3-70B INT8：`python experiment3_attention_patterns.py --model /path/to/llama3-70b-int8`
+  - [ ] Qwen2.5-72B INT4：`python experiment3_attention_patterns.py --model /path/to/qwen2.5-72b-int4`
+  - [ ] 确认量化模型下 `output_attentions=True` 能正常输出 attention tensor（bitsandbytes/GPTQ/AWQ 支持情况不同）
+- [ ] 将实验3结果整合进论文（新增第 X 节：注意力模式分析）
+- [ ] 生成跨模型对比图表（LLaMA vs Qwen 的结构注意力头分布）
+- [ ] Zero 审阅中文论文 `dual-layer-empirical-cn.md`
+- [ ] 中文定稿后翻译为英文（更新 `dual-layer-empirical.tex`）
+- [ ] 发布 Zenodo
+
 ## 归属
 
 - **Zero**（Jin Yanyan）：论文作者、实验设计

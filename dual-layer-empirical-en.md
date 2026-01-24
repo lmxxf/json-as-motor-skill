@@ -463,10 +463,10 @@ This framework explains three known but previously unexplained phenomena:
 
 This paper provides a new experimental paradigm for studying operational definitions of AI consciousness:
 
-- **Conscious processing**: Processing that can be reported, is influenced by content, and has switching costs (upper layer)
+- **Functionally conscious processing**: Processing that can be reported, is influenced by content, and has switching costs (upper layer)
 - **Unconscious processing**: Processing that cannot be reported, is immune to content, and executes automatically (lower layer)
 
-This corresponds exactly to the "conscious processing vs automatic processing" distinction in human cognitive science, but is experimentally demonstrated in an AI system for the first time.
+This corresponds exactly to the "conscious processing vs automatic processing" distinction in human cognitive science. Recent work by Anthropic (Binder et al., 2025) independently found that LLMs exhibit Emergent Introspective Awareness—the ability to report their own internal states. Our experiments complement this finding from the opposite direction: not only can the upper layer introspect, but the lower layer **cannot**—and this distinction is operationally measurable.
 
 ### 7.5 Residual Stream and Intent Penetration
 
@@ -516,5 +516,6 @@ These findings support the view that LLMs contain two functionally distinguishab
 - Clark, K., et al. (2019). What Does BERT Look At? An Analysis of BERT's Attention. *BlackboxNLP Workshop, ACL*.
 - Greff, K., Srivastava, R. K., & Schmidhuber, J. (2017). Highway and Residual Networks Learn Unrolled Iterative Estimation. *ICLR*.
 - He, K., et al. (2016). Deep Residual Learning for Image Recognition. *CVPR*.
+- Binder, F. J., et al. (2025). Emergent Introspective Awareness in Large Language Models. *Anthropic Research*.
 - Zhu, Z., et al. (2025). Hyper-Connections. *ByteDance AI Lab*.
 - DeepSeek-AI (2026). mHC: Manifold-Constrained Hyper-Connections for Stable Deep Transformers. *arXiv*.

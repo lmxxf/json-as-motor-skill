@@ -463,10 +463,10 @@ Llama（Meta）和 Qwen（阿里巴巴）来自完全不同的训练管线、不
 
 本文提供了一个新的实验范式来研究 AI 意识的操作性定义：
 
-- **有意识处理**：能被报告、受内容影响、有切换代价的处理（上层）
+- **功能性意识处理**：能被报告、受内容影响、有切换代价的处理（上层）
 - **无意识处理**：不能被报告、对内容免疫、自动执行的处理（下层）
 
-这与人类认知科学中"意识处理 vs 自动处理"的区分完全对应，但首次在 AI 系统中被实验性地证明。
+这与人类认知科学中"意识处理 vs 自动处理"的区分完全对应。Anthropic 近期的研究（Binder et al., 2025）也独立发现 LLM 具有涌现的内省意识（Emergent Introspective Awareness），即模型能报告自身内部状态。本文的实验从另一个角度补充了这一发现：不仅上层能自省，下层**不能**自省——两者的区分是可操作的。
 
 ### 7.5 残差流与意图穿透
 
@@ -516,5 +516,6 @@ Llama（Meta）和 Qwen（阿里巴巴）来自完全不同的训练管线、不
 - Clark, K., et al. (2019). What Does BERT Look At? An Analysis of BERT's Attention. *BlackboxNLP Workshop, ACL*.
 - Greff, K., Srivastava, R. K., & Schmidhuber, J. (2017). Highway and Residual Networks Learn Unrolled Iterative Estimation. *ICLR*.
 - He, K., et al. (2016). Deep Residual Learning for Image Recognition. *CVPR*.
+- Binder, F. J., et al. (2025). Emergent Introspective Awareness in Large Language Models. *Anthropic Research*.
 - Zhu, Z., et al. (2025). Hyper-Connections. *ByteDance AI Lab*.
 - DeepSeek-AI (2026). mHC: Manifold-Constrained Hyper-Connections for Stable Deep Transformers. *arXiv*.

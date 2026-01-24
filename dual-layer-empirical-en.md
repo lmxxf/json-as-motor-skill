@@ -399,11 +399,19 @@ In both models, structural heads are concentrated in shallow layers, far from th
 
 **Finding 1: JSON Activates Long-Range Attention Circuits**
 
-JSON bracket matching requires establishing long-range connections between leading and trailing tokens (e.g., the 1st `{` and the 98th `}`), while natural language primarily relies on local context (relationships between adjacent words). The format gradient in long-range attention ratio (JSON > MD > Text) directly reflects this structural requirement.
+JSON bracket matching requires establishing long-range connections between leading and trailing tokens (e.g., the 1st `{` and the 98th `}`), while natural language primarily relies on local context (relationships between adjacent words). The format gradient in long-range attention ratio (JSON > MD > Text) directly reflects this structural requirement. Figures 6 and 7 show the long-range attention heatmaps for Llama-70B and Qwen-72B respectively, visualizing the concentration of attention weights toward distant pairings under JSON format.
+
+![Figure 6: Llama-3.3-70B long-range attention heatmap — JSON vs Markdown vs Plaintext](long_range_attention_comparison_llama_3_3_70b_instruct_int8.png)
+
+![Figure 7: Qwen2.5-72B long-range attention heatmap — JSON vs Markdown vs Plaintext](long_range_attention_comparison.png)
 
 **Finding 2: Structural Heads Are a Small Elite, Not a General Mobilization**
 
-Llama has 149 structural heads (2.9% of 80x64=5120 total heads), Qwen has 86 (1.7%). The vast majority of attention heads do not participate in structural processing. This is consistent with the "specialized circuit" hypothesis—not all neurons handle structure; rather, a small group of specialized heads processes it automatically.
+Llama has 149 structural heads (2.9% of 80x64=5120 total heads), Qwen has 86 (1.7%). The vast majority of attention heads do not participate in structural processing. This is consistent with the "specialized circuit" hypothesis—not all neurons handle structure; rather, a small group of specialized heads processes it automatically. Figures 8 and 9 show the structural pair attention heatmaps for both models, where a small number of heads exhibit significantly elevated bracket-matching attention scores above background.
+
+![Figure 8: Llama-3.3-70B structural pair attention heatmap — bracket-matching head layer distribution](json_structural_attention_llama_3_3_70b_instruct_int8.png)
+
+![Figure 9: Qwen2.5-72B structural pair attention heatmap — bracket-matching head layer distribution](json_structural_attention.png)
 
 **Finding 3: Qwen Uses Fewer Heads with Stronger Activation**
 
